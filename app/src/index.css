@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 60% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 60% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 60% 15%;
+    --primary: 220 60% 15%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 220 60% 15%;
+    --muted: 240 5% 96%;
+    --muted-foreground: 220 10% 45%;
+    --accent: 43 65% 50%;
+    --accent-foreground: 220 60% 15%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 10% 85%;
+    --input: 220 10% 85%;
+    --ring: 76 99% 50%;
+    --radius: 0rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 76 99% 50%;
+  }
+
+  body {
+    @apply bg-white text-navy-main font-body antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .btn-lime {
+    @apply bg-lime text-navy-dark font-semibold uppercase text-sm tracking-widest px-8 py-4 transition-all duration-300;
+  }
+  .btn-lime:hover {
+    @apply bg-lime-dark -translate-y-0.5;
+    box-shadow: 0 10px 30px rgba(199, 254, 1, 0.3);
+  }
+
+  .btn-navy-outline {
+    @apply border-2 border-navy-main text-navy-main font-semibold uppercase text-sm tracking-widest px-8 py-4 transition-all duration-300 bg-transparent;
+  }
+  .btn-navy-outline:hover {
+    @apply bg-navy-main text-white -translate-y-0.5;
+  }
+
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-20 xl:px-32;
+  }
+
+  .gold-rule {
+    @apply w-10 h-0.5 bg-lime;
+  }
+
+  .text-eyebrow {
+    @apply text-xs uppercase tracking-[0.15em] text-navy-main/60 font-semibold;
+  }
+
+  .text-eyebrow-lime {
+    @apply text-xs uppercase tracking-[0.15em] text-lime font-semibold;
+  }
+}
+
+@layer utilities {
+  .animation-delay-150 {
+    animation-delay: 150ms;
+  }
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animation-delay-450 {
+    animation-delay: 450ms;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Partner logos marquee */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #081f43;
+}
+::-webkit-scrollbar-thumb {
+  background: #C7FE01;
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A8D900;
+}
