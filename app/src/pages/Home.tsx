@@ -28,7 +28,7 @@ const ctaCards = [
   {
     icon: TrendingUp,
     title: "100% JV Funding",
-    desc: "Full joint venture funding for qualifying development schemes. No money down — just a great project.",
+    desc: "Full joint venture funding for qualifying development schemes. No money down just a great project.",
     link: "/jv-funding",
     cta: "Learn More",
   },
@@ -43,13 +43,13 @@ const ctaCards = [
   {
     icon: Users,
     title: "Register as an Investor",
-    desc: "Access off-market opportunities, JV structures and development finance deals before they reach the market.",
+    desc: "Access off market opportunities, JV structures and development finance deals before they reach the market.",
     link: "/investors",
     cta: "Register Now",
   },
   {
     icon: Lock,
-    title: "Off-Market Opportunities",
+    title: "Off Market Opportunities",
     desc: "Discreet deal flow for qualified buyers and investors. Sites and portfolios not advertised elsewhere.",
     link: "https://listings-conquest-property.co.uk",
     external: true,
@@ -80,7 +80,7 @@ const services = [
   },
   {
     num: "05",
-    title: "Off-Market Brokerage",
+    title: "Off Market Brokerage",
     desc: "Discreet introductions between motivated sellers and qualified buyers. Our investor network spans family offices, institutional funds and private HNW individuals.",
   },
   {
@@ -93,7 +93,7 @@ const services = [
 const aboutPoints = [
   {
     icon: MapPin,
-    title: "London-Focused, UK-Wide Reach",
+    title: "London Focused, UK-Wide Reach",
     desc: "Deep expertise across 11 London boroughs in SE and East London, with capability to transact nationwide.",
   },
   {
@@ -103,14 +103,10 @@ const aboutPoints = [
   },
   {
     icon: Clock,
-    title: "Off-Market Speed & Discretion",
+    title: "Off Market Speed & Discretion",
     desc: "We move quickly and discreetly, providing landowners with certainty and buyers with competitive advantage.",
   },
-  {
-    icon: FileText,
-    title: "Pattinson Partner Agent",
-    desc: "Access to one of the UK's leading auction platforms, delivering fast and legally certain disposals.",
-  },
+  
 ];
 
 export default function Home() {
@@ -168,7 +164,7 @@ export default function Home() {
       {/* Hero Image - Full-width, full image visible, no cropping */}
       <section className="bg-navy-dark">
         <img
-          src="/images/h1.jpg"
+          src="./images/h1.jpg"
           alt="Canary Wharf London"
           className="w-full h-auto block"
         />
@@ -185,7 +181,7 @@ export default function Home() {
           </h1>
           <p className="text-white/70 text-base md:text-lg max-w-2xl mb-8">
             Specialists in Land Acquisition, Development Finance, Property Options,
-            Joint Ventures and Off-Market Development Opportunities across the UK.
+            Joint Ventures and Off Market Development Opportunities across the UK.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link to="/land-development" className="btn-lime flex items-center gap-2">
@@ -210,8 +206,8 @@ export default function Home() {
               How Can We Help You?
             </h2>
             <p className="text-navy-main/60 text-lg max-w-xl">
-              Whether you own land, need finance, or are looking for investment-grade
-              opportunities — we have a direct route for you.
+              Whether you own land, need finance, or are looking for investment grade
+              opportunities, we have a direct route for you.
             </p>
           </ScrollReveal>
 
@@ -251,7 +247,7 @@ export default function Home() {
             </h2>
             <p className="text-navy-main/60 text-lg max-w-xl">
               From site identification to planning, development, financing and disposal
-              — we operate across the full property lifecycle.
+              we operate across the full property lifecycle.
             </p>
           </ScrollReveal>
 
@@ -300,7 +296,7 @@ export default function Home() {
                 <p className="text-white/60 leading-relaxed mb-8">
                   We operate as a Pattinson partner agent, giving our clients access to
                   one of the UK's most active auction and agency networks alongside our
-                  own off-market deal flow.
+                  own off market deal flow.
                 </p>
                 <Link to="/about" className="btn-lime inline-flex items-center gap-2">
                   Our Story <ArrowRight className="w-4 h-4" />
