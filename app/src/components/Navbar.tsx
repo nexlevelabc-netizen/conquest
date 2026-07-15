@@ -31,7 +31,7 @@ const propertyDropdown = [
 ];
 
 const externalLinks = [
-  { label: "Off-Market Listings", url: "https://listings-conquest-property.co.uk" },
+  { label: "Off Market Listings", url: "https://listings-conquest-property.co.uk" },
 ];
 
 export default function Navbar() {
@@ -121,7 +121,7 @@ export default function Navbar() {
       <nav className="flex items-center justify-between section-padding h-20">
         <Link to="/" className="flex items-center z-50">
           <img
-            src="/images/logo.png"
+            src="./images/logo.png"
             alt="Conquest Property"
             className="h-10 w-auto"
           />
@@ -150,7 +150,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="text-xs uppercase tracking-[0.08em] font-semibold text-white/80 hover:text-white transition-colors"
             >
-              Off-Market
+              Off Market
             </a>
           ))}
           <Link
@@ -256,7 +256,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="text-sm uppercase tracking-wider font-medium text-white/60 mt-2"
           >
-            Off-Market Listings
+            Off Market Listings
           </a>
 
           <Link
